@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba concepto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type='text/javascript' src='./js/index.js'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+        <script type="text/javascript" src="./js/three.min.js"></script>
+        <script type="text/javascript" src="./js/panolens.min.js"></script>
+        <link rel="stylesheet" href="./css/tikslus360.css" />
+        <script type="text/javascript" src="./js/tikslus360.min.js"></script>
+    </head>
+    <body>
+
+        <div  class="sidenav">
+            <span id="logo" style="font-size:30px;cursor:pointer" onclick="openNav()"> </span>
+            <div id="links">
+                <a href="#" onclick="open360()" >360º</a>
+                <a href="#" onclick="openProduct()">PRODUCT</a>
+                <a href="#" onclick="openMaps()">MAP</a>
+                <a href="#" onclick="openTour()">TOUR</a>
+            </div>
+        </div>
+        
+       <div class="main">            
+            <div id="product360" style="width: 100%; height: 100%;" style="display: none;" >                
+                <div id="product"></div>
+            </div>
+            <div id="360" style="width: 100%; height: 100%; display: none;">
+                <div id="container" ></div>
+            </div>
+            <div id="mapcont" style="width: 100%; height: 100%;" style="display: none;">
+                <div id="map" style="height: 400px; width: 100%;" class="map"></div>
+            </div>
+             <iframe class="content" id="frame" style="background: #FFFFFF; display:none; "></iframe> 
+        </div> 
+        
+    </body>
+
+
+</html>
