@@ -45,8 +45,8 @@ function openProduct() {
 			imageCount:6, // the number of images you have.
 			imageExt:'png', // the extension of the images. Make sure all the images have same extension.
 			canvasID:'myhorse', // ID that will be assigned to the canvas
-			canvasWidth:640, // width of canvas
-			canvasHeight:480, // height of canvas
+			canvasWidth:1700, // width of canvas
+			canvasHeight:900, // height of canvas
 			zoomPower:2, // power of zoom
 			zoomRadius:100, // radius of zoom lens
 			autoRotate:false, // if TRUE, auto rotation will be enabled by default
