@@ -1,5 +1,5 @@
 var panorama, viewer, container, infospot;
-var width=100
+var width=1700
 var height=950
 function open360() {
 	if($("#360").css('display') == 'none'){			
@@ -18,17 +18,21 @@ function open360() {
 			panorama.add( infospot );
 			
 			viewer = new PANOLENS.Viewer( { container: container ,controlButtons:['fullscreen']} );
-			viewer.container.style.width = width + "%";
-			viewer.container.style.height = height + "px";
+			
 			viewer.add( panorama );
-			$("canvas").css('width','100%')
-			$("canvas").css('height','100%')
+			changeContainerSize();
 		}
 		
 		
 	}
 	
 }
+
+function changeContainerSize ( ) {
+	viewer.container.style.width = width + "px";
+	viewer.container.style.height = height + "px";
+	viewer.onWindowResize( width, height );
+  }
 
 function openProduct() {
 	if($("#product360").css('display') == 'none'){
