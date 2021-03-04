@@ -57,12 +57,19 @@ h1{
   }
   
   .sidenav a:hover {
-	color: #f1f1f1;
+	color: #73D8B2;
   }
 
   #links{
 	  margin-top: 100%;
   }
+
+  #links a{
+	font-family: 'Barlow Condensed', sans-serif;
+	  text-decoration: none;
+  }
+
+  
  
   
   .main {
@@ -87,10 +94,10 @@ h1{
   }
 
   #frame{
-	  height: 700px;
+	  height: 950px;
 	  width: 100%;
 	  border: none;
-	  margin-top: 5%;
+	  margin-top: 10px;
 	  background-color: #ecf0f1;
   }
 
@@ -195,3 +202,42 @@ text-align: center;
 }
 
 /* end footer*/
+
+/* icons*/
+
+#icon360{
+	background: url(../images/icons/360.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin-right: 5px;
+}
+#iconprod{
+	background: url(../images/icons/skyscrapper.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin-right: 5px;
+}
+#iconmap{
+	background: url(../images/icons/map.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin-right: 5px;
+}
+#icontour{
+	background: url(../images/icons/tour.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin-right: 5px;
+}
