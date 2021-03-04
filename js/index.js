@@ -21,18 +21,15 @@ function open360() {
 			
 			viewer.add( panorama );
 			changeContainerSize();
-		}
-		
-		
-	}
-	
+		}		
+	}	
 }
 
 function changeContainerSize ( ) {
 	viewer.container.style.width = width + "px";
 	viewer.container.style.height = height + "px";
 	viewer.onWindowResize( width, height );
-  }
+}
 
 function openProduct() {
 	if($("#product360").css('display') == 'none'){
@@ -52,8 +49,7 @@ function openProduct() {
 			autoRotate:false, // if TRUE, auto rotation will be enabled by default
 			autoRotateInterval:100, // rotation inteval
 			fadeInInterval:400 // fade interval
-		});
-		
+		});		
 	}
 }
 
@@ -75,10 +71,7 @@ function openMaps() {
 				zoom: 15
 			})
 		});   
-	}
-		
-	
-	
+	}	
 }
 
 function openTour() {
